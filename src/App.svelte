@@ -58,15 +58,31 @@
     line-height: 2rem;
     margin-bottom: 1rem;
   }
-
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .full {
       width:100%;
     }
     .grid {
       display: grid;
-      grid-template-columns: 1fr 3fr 5fr 1fr;
+      grid-template-columns: 0fr 2fr 10fr 0fr;
       grid-column-gap: 1.25rem;
+    }
+    .col-1 {
+      grid-column: 2;
+      align-self: start;
+    }
+    .col-2 {
+      grid-column: 3;
+      align-self: start;
+    }
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .full {
+      max-width: 1280px;
+    }
+    .grid {
+      grid-template-columns: 1fr 3fr 5fr 3fr;
     }
     .col-1 {
       grid-column: 2;
