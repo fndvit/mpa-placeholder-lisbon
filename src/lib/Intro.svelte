@@ -18,63 +18,57 @@
 
 <svelte:window bind:innerWidth={width} />
 <div class="landing-page" style="background-image: url({landingImage})">
-
   <img src={unep}  class="unep-logo" alt="Logo for the United Nations Environment Programme" />
   <div class="splash" >
     <div class="col-1">
-        <img src={mpath} class="logo-mpath" alt="Svelte Logo" />
-        <h3>{header}</h3>
+        <img src={mpath} class="logo-mpath" alt="Logo for MPAth (Marine Protected Areas Toolkit Hub)" />
+        <h2>{header}</h2>
     </div>
-    
   </div>
 </div>
 
 <style>
   .landing-page {
-    height: auto;
-    margin: -8px;
     background-size: cover;
     background-position: bottom;
+    margin: 0;
+    padding: 0;
+    height: 70vh;
   }
 
   .unep-logo {
     position: absolute;
     margin: 1rem;
-
     height: 2.5rem;
     width: auto;
   }
 
   .logo-mpath {
-    height: 4rem;
+    height: 8rem;
   }
 
   .splash {
-
     max-width:80%;
     margin: 0 auto;
-    padding: 6rem 0rem 3rem 0;
-    width: auto;
-    color: white;
+    padding: 0;
+    padding-top: 20vh;
   }
 
-  h3 {
-    margin-top: 20px;
-    font-size: 16px;
-  }
-
-  @media only screen and (min-width: 450px) {
-    .logo-mpath {
-        height: 5rem;
-    }
-
+  h2 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 200;
+    color: #fff;
+    width:75%;
   }
 
   @media only screen and (min-width: 768px) {
 
     .landing-page {
-        height: 575px;
+        height: 80vh;
     }
+
     .logo-mpath {
         height: 8rem;
     }
@@ -82,38 +76,31 @@
         height: 4rem;
     }
     .splash {
+        width: 100%;
         display: grid;
-        grid-template-columns: 2fr 3fr;
-        padding-left: 2.5rem;
-        padding-top: 12rem;
+        grid-template-columns: 0fr 12fr 0fr;
+        grid-column-gap: 1.25rem;
     }
-    h3 {
-        font-size: 20px;
+    .col-1 {
+      grid-column: 2;
+      align-self: start;
     }
 
   }
 
   @media only screen and (min-width: 1280px) {
 
-    .landing-page {
-        height: 793px;
-    }
-
     .logo-mpath {
         height: 13rem;
     }
     .splash {
         max-width: 1280px;
-        grid-template-columns: 1fr 473px 7fr;
-        padding-top: 14rem;
-        
+        grid-template-columns: 1fr 8fr 3fr;
     }
-    .col-1 {
-      grid-column: 2;
-      align-self: start;
-    }
-    h3 {
-        font-size: 24px;
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 100;
     }
   }
 

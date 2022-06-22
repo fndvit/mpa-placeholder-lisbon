@@ -30,9 +30,14 @@
 
 <style>
 
+  :global(body, html) {
+    padding: 0;
+    margin: 0;
+  }
+
   .full {
     max-width:80%;
-    margin: 20px auto;
+    margin: 3rem auto;
     padding: 0;
     
   }
@@ -52,7 +57,7 @@
   }
 
   h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 200;
   }
 
@@ -66,7 +71,6 @@
   @media only screen and (min-width: 768px) {
     .full {
       width:100%;
-      margin: 45px auto;
     }
     .grid {
       display: grid;
@@ -82,9 +86,8 @@
       align-self: start;
     }
     h3 {
-      font-size: 3rem;
+      font-size: 2.4rem;
       font-weight: 100;
-      height: auto;
     }
     p {
       font-size: 1.125rem;
@@ -95,22 +98,12 @@
   @media only screen and (min-width: 1280px) {
     .full {
       max-width: 1280px;
-      
     }
     .grid {
       grid-template-columns: 1fr 3fr 5fr 3fr;
     }
-    .col-1 {
-      grid-column: 2;
-      align-self: start;
-    }
-    .col-2 {
-      grid-column: 3;
-      align-self: start;
-    }
-
     h3 {
-      height: 200px;
+      font-size: 3rem;
     }
   }
 </style>
