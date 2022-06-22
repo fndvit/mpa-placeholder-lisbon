@@ -1,47 +1,58 @@
 <script>
-    import landingImage from '../assets/landingImage.jpg';
+    import landingImage from '../assets/img/landingImage.jpg';
     import unep from '../assets/logos/unep-white.svg';
     import mpath from '../assets/logos/mpath.svg';
-    import fishing_xlarge from '../assets/img/fishing-xl.jpg';
-    import fishing_large from '../assets/img/fishing-l.jpg';
-    import fishing_medium from '../assets/img/fishing-m.jpg';
-    import fishing_small from '../assets/img/fishing-s.jpg';
-    import turtle_xlarge from '../assets/img/turtle-xl.jpg';
-    import turtle_large from '../assets/img/turtle-l.jpg';
-    import turtle_medium from '../assets/img/turtle-m.jpg';
-    import turtle_small from '../assets/img/turtle-s.jpg';
+    import fishing_xl from '../assets/img/fishing-xl.jpg';
+    import fishing_l from '../assets/img/fishing-2-l.jpg';
+    import fishing_m from '../assets/img/fishing-1-m.jpg';
+    import fishing_s from '../assets/img/fishing-3-s.jpg';
+    import turtle_xl from '../assets/img/turtle-xl.jpg';
+    import turtle_l from '../assets/img/turtle-2-l.jpg';
+    import turtle_m from '../assets/img/turtle-1-m.jpg';
+    import turtle_s from '../assets/img/turtle-3-s.jpg';
+    import coral_xl from '../assets/img/coral-xl.jpg';
+    import coral_l from '../assets/img/coral-2-l.jpg';
+    import coral_m from '../assets/img/coral-1-m.jpg';
+    import coral_s from '../assets/img/coral-3-s.jpg';
 
     export let header;
     let width;
-    const currentLandingImg = Math.floor(Math.random() * 2);
 
-    const landingImg = [
+    const src = [
         {
-            '-xl': fishing_xlarge,
-            '-l': fishing_large,
-            '-m': fishing_medium,
-            '-s': fishing_small,
+            'xl': fishing_xl,
+            'l': fishing_l,
+            'm': fishing_m,
+            's': fishing_s,
         },
         {
-            '-xl': turtle_xlarge,
-            '-l': turtle_large,
-            '-m': turtle_medium,
-            '-s': turtle_small,
+            'xl': turtle_xl,
+            'l': turtle_l,
+            'm': turtle_m,
+            's': turtle_s,
+        },
+        {
+            'xl': coral_xl,
+            'l': coral_l,
+            'm': coral_m,
+            's': coral_s,
         },
     ]
 
-    $: imgSize = width < 480
-      ? '-s'
+    const rand = Math.floor(Math.random() * src.length);
+
+    $: size = width < 480
+      ? 's'
       : width < 768
-      ? '-m'
+      ? 'm'
       : width < 1280
-      ? '-l'
-      : '-xl'
+      ? 'l'
+      : 'xl'
 
 </script>
 
 <svelte:window bind:innerWidth={width} />
-<div class="landing-page" style="background-image: url({landingImg[currentLandingImg][imgSize]})">
+<div class="landing-page" style="background-image: url({src[rand][size]})">
   <img src={unep}  class="unep-logo" alt="Logo for the United Nations Environment Programme" />
   <div class="splash" >
     <div class="col-1">
@@ -84,6 +95,7 @@
     font-weight: 200;
     color: #fff;
     width:75%;
+    text-shadow: 0 0 .6rem rgb(0 0 0);
   }
 
   @media only screen and (min-width: 768px) {

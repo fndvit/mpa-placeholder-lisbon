@@ -1,20 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="156.4" viewBox="0 0 300 156.4">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="160" viewBox="0 -20 340 180">
   <defs>
     <style>
+      svg {
+        filter: drop-shadow(0 0 .5rem rgb(0 0 0 / 0.2));
+      }
       .a {
-        fill: #fff;
+        fill: #ffffffdd;
       }
 
       .b {
-        fill: #9ddae4;
+        fill: #9ddae4dd;
       }
 
       .c {
-        fill: #619fce;
+        fill: #619fcedd;
       }
 
       .d {
-        fill: #186bb5;
+        fill: #186bb5dd;
       }
     </style>
   </defs>

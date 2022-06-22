@@ -17,14 +17,6 @@
     </div>
     <div class="gdpr">
         <div class="gdpr-note">
-            <h4>Marketing Permissions</h4>
-            <p>Please select all the ways you would like to hear from MPAth:</p>
-
-            <fieldset class="checkbox" name="interestgroup_field">
-                <input type="checkbox" id="gdpr_46106" name="gdpr[46106]" value="Y" >
-                <label for="gdpr_46106"><span>Email</span></label>
-            </fieldset>
-
             <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
         </div>
         <div class="gdpr-legal">
@@ -54,19 +46,20 @@
     }
 
     .input-email {
-
-        border:solid 1px #ccc;
+        box-shadow: inset 0 0 0.3rem rgba(0 0 0 / .2);
+        border:none;
         border-radius: 3rem;
         width: 50%;
         height: 3rem;
         padding-left: 20px;
         font-family: montserrat, 'sans-serif';
-        font-weight: 200;
+        font-weight: 400;
         font-size: 1rem;
+        position:relative;
+        background-color: #f9f9f9;
     }
 
     .submit-button {
-        width: 50%;
         margin-top: .5rem;
         padding: 0 1rem;
         height: 3rem;
@@ -92,71 +85,8 @@
         color: #505050;
     }
 
-    .checkbox {
-        width: 100%;
-        margin: 15px auto;
-        position: relative;
-        display: block;
-        border: none;
-    }
-
-    .checkbox input[type="checkbox"] {
-        width: auto;
-        opacity: 0.00000001;
-        position: absolute;
-        left: 0;
-        margin-left: -20px;
-    }
-    .checkbox input[type="checkbox"]:checked ~ label::before {
-        color: #FBE26B;
-    }
-    .checkbox input[type="checkbox"]:checked ~ label::after {
-        transform: rotate(-45deg) scale(1);
-    }
-
-    .checkbox label {
-        position: relative;
-    }
-    .checkbox label:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        margin: 4px;
-        width: 22px;
-        height: 22px;
-        transition: transform 0.28s ease;
-        border-radius: 3px;
-        border: 2px solid #FBE26B;
-    }
-    .checkbox label:after {
-        content: '';
-        display: block;
-        width: 10px;
-        height: 5px;
-        border-bottom: 2px solid #FBE26B;
-        border-left: 2px solid #FBE26B;
-        transform: rotate(-45deg) scale(0);
-        transition: transform ease 0.25s;
-        position: absolute;
-        top: 12px;
-        left: 10px;
-    }
-    
-
-    .checkbox label {
-        min-height: 34px;
-        display: block;
-        padding-left: 40px;
-
-    }
-    span {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
     p {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 
     @media only screen and (min-width: 450px) {

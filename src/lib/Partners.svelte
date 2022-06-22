@@ -10,10 +10,10 @@
 
   const logos = [
     {src: unep, alt: 'Logo for the United Nations Environment Programme'},
-    {src: tnc, alt: 'Logo for The Nature Conservancy'},
     {src: iadc, alt: 'Logo for the Italian Agency for Development Cooperation'},
-    {src: uq, alt: 'Logo for the University of Queensland'},
+    {src: tnc, alt: 'Logo for The Nature Conservancy'},
     {src: wwf, alt: 'Logo for the World Wildlife Fund'},
+    {src: uq, alt: 'Logo for the University of Queensland'},
     {src: udg, alt: 'Logo for Universitat de Girona'},
   ];
 
@@ -41,9 +41,9 @@
   }
 
   .logo {
-    height: 3rem;
+    height: 2.8rem;
     width: auto;
-    padding: 0 2rem 1rem 0;
+    padding: 0 1.5rem 1rem 0;
   }
 
   .logos {
@@ -55,9 +55,9 @@
 
   @media only screen and (min-width: 768px) {
     .logo {
-      height: 4rem;
+      height: 3.2rem;
       width: auto;
-      padding: 0 2rem 1.2rem 0;
+      padding: 0 1.5rem 1.2rem 0;
     }
     h4 {
       margin: 4rem 0 1rem 0;
