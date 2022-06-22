@@ -1,14 +1,25 @@
 <script>
     import landingImage from '../assets/landingImage.jpg';
-    import unep from '../assets/logos/unep.svg';
+    import unep from '../assets/logos/unep-white.svg';
     import mpath from '../assets/logos/mpath.svg';
 
     export let header;
+    let width;
+
+    const imgSize = () => width < 480
+      ? '-s'
+      : width < 768
+      ? '-m'
+      : width < 1280
+      ? '-l'
+      : '-xl'
+
 </script>
 
+<svelte:window bind:innerWidth={width} />
 <div class="landing-page" style="background-image: url({landingImage})">
 
-  <img src={unep}  class="unep-logo" alt="Svelte Logo" />
+  <img src={unep}  class="unep-logo" alt="Logo for the United Nations Environment Programme" />
   <div class="splash" >
     <div class="col-1">
         <img src={mpath} class="logo-mpath" alt="Svelte Logo" />
