@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm build
+        run: npm run build
       - name: Deploy
-        run: aws s3 sync ./public s3://mpath.help
+        run: aws s3 sync ./dist s3://mpath.help
