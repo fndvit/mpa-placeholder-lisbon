@@ -8,10 +8,10 @@
 <section class="subscribe">
 <form action="https://help.us11.list-manage.com/subscribe/post?u=b9c019f9cb34eb064763cc132&amp;id=ff27076012" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div class="subscribe-field">
-        <h2><a id="subscribe"></a>{header}</h2>
+        <h2><a id="subscribe">{header}</a></h2>
         <h3>{cta}</h3>
         <div class="field">
-            <input type="email" value="" name="EMAIL" placeholder="Enter your email address" class="input-email" id="mce-EMAIL">
+            <input type="email" value="" name="EMAIL" placeholder="Enter your email address" class="input-email">
             <input type="submit" value="Subscribe" name="subscribe" class="submit-button">
         </div>
     </div>
@@ -62,12 +62,12 @@
         margin-left: .5rem;
         padding: 0 1rem;
         height: 3rem;
-        border-radius: 3rem;
         border: solid 1px #FBE26B;
         background-color: #FBE26B;
         font-family: montserrat, 'sans-serif';
         font-weight: 700;
         font-size: .85rem;
+        border-radius: 3rem;
     }
 
     .submit-button:hover{
@@ -86,6 +86,11 @@
 
     p {
         margin-bottom: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: currentColor;
     }
 
     @media only screen and (min-width: 768px) {

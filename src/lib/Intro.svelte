@@ -68,6 +68,7 @@
     margin: 0;
     padding: 0;
     height: 80vh;
+    min-height: 24rem;
   }
 
   .unep-logo {
@@ -115,6 +116,7 @@
 
     .landing-page {
         height: 80vh;
+        min-height: 32rem;
     }
 
     .logo-mpath {
