@@ -8,7 +8,7 @@
 <section class="subscribe">
 <form action="https://help.us11.list-manage.com/subscribe/post?u=b9c019f9cb34eb064763cc132&amp;id=ff27076012" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div class="subscribe-field">
-        <h2>{header}</h2>
+        <h2><a id="subscribe"></a>{header}</h2>
         <h3>{cta}</h3>
         <div class="field">
             <input type="email" value="" name="EMAIL" placeholder="Enter your email address" class="input-email" id="mce-EMAIL">

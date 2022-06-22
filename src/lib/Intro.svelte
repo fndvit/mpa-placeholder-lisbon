@@ -56,7 +56,7 @@
   <div class="splash" >
     <div class="col-1">
         <img src={mpath} class="logo-mpath" alt="Logo for MPAth (Marine Protected Areas Toolkit Hub)" />
-        <h2>{header}</h2>
+        <h2>{header}<span class="jump"><a href="#subscribe">Subscribe below ↓</a></span></h2>
     </div>
   </div>
 </div>
@@ -95,6 +95,14 @@
     color: #fff;
     width:75%;
     text-shadow: 0 0 .6rem rgb(0 0 0);
+  }
+
+  .jump a {
+    font-size: 1rem;
+    font-weight: 600;
+    color:#fff;
+    text-decoration: none;
+    padding-left: 1rem;
   }
 
   @media only screen and (min-width: 768px) {
