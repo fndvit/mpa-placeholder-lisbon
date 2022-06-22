@@ -33,7 +33,7 @@
   h4 {
     font-size: 1rem;
     font-weight: 700;
-    margin: 4rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
   }
 
   .partners {
@@ -58,6 +58,9 @@
       height: 4rem;
       width: auto;
       padding: 0 2rem 1.2rem 0;
+    }
+    h4 {
+      margin: 4rem 0 1rem 0;
     }
   }
 </style>

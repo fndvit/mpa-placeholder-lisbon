@@ -37,7 +37,7 @@
 
   .full {
     max-width:80%;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
     padding: 0;
     
   }
@@ -71,6 +71,7 @@
   @media only screen and (min-width: 768px) {
     .full {
       width:100%;
+      margin: 3rem auto;
     }
     .grid {
       display: grid;

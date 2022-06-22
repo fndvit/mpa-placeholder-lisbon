@@ -33,12 +33,11 @@
     background-position: bottom;
     margin: 0;
     padding: 0;
-    height: 70vh;
+    height: 80vh;
   }
 
   .unep-logo {
-    position: absolute;
-    margin: 1rem;
+    margin: 1rem 10%;
     height: 2.5rem;
     width: auto;
   }
@@ -51,13 +50,13 @@
     max-width:80%;
     margin: 0 auto;
     padding: 0;
-    padding-top: 20vh;
+    padding-top: 10vh;
   }
 
   h2 {
     margin-top: 1.5rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.8rem;
     font-weight: 200;
     color: #fff;
     width:75%;
@@ -74,6 +73,7 @@
     }
     .unep-logo {
         height: 4rem;
+        margin: 1rem;
     }
     .splash {
         width: 100%;
