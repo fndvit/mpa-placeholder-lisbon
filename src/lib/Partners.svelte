@@ -8,7 +8,14 @@
 
   export let header;
 
-  const logos = [unep, iadc, tnc, uq, wwf, udg]
+  const logos = [
+    {src: unep, alt: 'Logo for the United Nations Environment Programme'},
+    {src: iadc, alt: 'Logo for the Italian Agency for Development Cooperation'},
+    {src: tnc, alt: 'Logo for The Nature Conservancy'},
+    {src: uq, alt: 'Logo for the University of Queensland'},
+    {src: wwf, alt: 'Logo for the World Wildlife Fund'},
+    {src: udg, alt: 'Logo for Universitat de Girona'},
+  ];
 
 </script>
 
@@ -16,7 +23,7 @@
   <h4>{header}</h4>
   <div class="logos">
   {#each logos as logo}
-    <img src={logo} class="logo" alt="Svelte Logo" />
+    <img src={logo.src} class="logo" alt={logo.alt} />
   {/each}
   </div>
 </section>
@@ -30,8 +37,8 @@
   .partners {
     margin-bottom: 2rem;
   }
-  :global(.logo) {
-    height: 4rem;
+  .logo {
+    height: 3rem;
     width: auto;
     padding: 0 2rem 1rem 0;
   }
@@ -40,5 +47,12 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: start;
+  }
+  @media only screen and (min-width: 768px) {
+    .logo {
+      height: 4rem;
+      width: auto;
+      padding: 0 2rem 1rem 0;
+    }
   }
 </style>

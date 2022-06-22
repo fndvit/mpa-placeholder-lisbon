@@ -47,15 +47,13 @@
     font-family: montserrat, 'sans-serif';
   }
   h3 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-weight: 100;
+    font-size: 2.4rem;
+    font-weight: 200;
   }
   p {
     font-family: bitter, 'serif';
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
     margin-bottom: 1rem;
   }
   @media only screen and (min-width: 768px) {
@@ -75,8 +73,16 @@
       grid-column: 3;
       align-self: start;
     }
+    h3 {
+      font-size: 3rem;
+      font-weight: 100;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 2rem;
+    }
   }
-  
+
   @media only screen and (min-width: 1280px) {
     .full {
       max-width: 1280px;
