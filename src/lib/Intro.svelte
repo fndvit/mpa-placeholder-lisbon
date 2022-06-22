@@ -1,12 +1,36 @@
 <script>
-    import landingImage from '../assets/img/landingImage.jpg';
+    import landingImage from '../assets/landingImage.jpg';
     import unep from '../assets/logos/unep-white.svg';
     import mpath from '../assets/logos/mpath.svg';
+    import fishing_xlarge from '../assets/img/fishing-xl.jpg';
+    import fishing_large from '../assets/img/fishing-l.jpg';
+    import fishing_medium from '../assets/img/fishing-m.jpg';
+    import fishing_small from '../assets/img/fishing-s.jpg';
+    import turtle_xlarge from '../assets/img/turtle-xl.jpg';
+    import turtle_large from '../assets/img/turtle-l.jpg';
+    import turtle_medium from '../assets/img/turtle-m.jpg';
+    import turtle_small from '../assets/img/turtle-s.jpg';
 
     export let header;
     let width;
+    const currentLandingImg = Math.floor(Math.random() * 2);
 
-    const imgSize = () => width < 480
+    const landingImg = [
+        {
+            '-xl': fishing_xlarge,
+            '-l': fishing_large,
+            '-m': fishing_medium,
+            '-s': fishing_small,
+        },
+        {
+            '-xl': turtle_xlarge,
+            '-l': turtle_large,
+            '-m': turtle_medium,
+            '-s': turtle_small,
+        },
+    ]
+
+    $: imgSize = width < 480
       ? '-s'
       : width < 768
       ? '-m'
@@ -17,7 +41,7 @@
 </script>
 
 <svelte:window bind:innerWidth={width} />
-<div class="landing-page" style="background-image: url({landingImage})">
+<div class="landing-page" style="background-image: url({landingImg[currentLandingImg][imgSize]})">
   <img src={unep}  class="unep-logo" alt="Logo for the United Nations Environment Programme" />
   <div class="splash" >
     <div class="col-1">
