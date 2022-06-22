@@ -1,5 +1,5 @@
 <script>
-    import landingImage from '../assets/landingImage.jpg';
+    import landingImage from '../assets/img/landingImage.jpg';
     import unep from '../assets/logos/unep-white.svg';
     import mpath from '../assets/logos/mpath.svg';
 
