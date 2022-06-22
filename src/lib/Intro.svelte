@@ -72,7 +72,7 @@
 
   .unep-logo {
     margin: 1rem 10%;
-    height: 2.5rem;
+    height: 3rem;
     width: auto;
   }
 
@@ -102,7 +102,13 @@
     font-weight: 600;
     color:#fff;
     text-decoration: none;
-    padding-left: 1rem;
+    margin-left: .5rem;
+    border-bottom: dotted 1px #fff;
+    transition: opacity .2s;
+  }
+
+  .jump a:hover {
+    opacity:.7;
   }
 
   @media only screen and (min-width: 768px) {

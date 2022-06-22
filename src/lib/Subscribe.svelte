@@ -59,6 +59,7 @@
 
     .submit-button {
         margin-top: .5rem;
+        margin-left: .5rem;
         padding: 0 1rem;
         height: 3rem;
         border-radius: 3rem;
@@ -66,7 +67,7 @@
         background-color: #FBE26B;
         font-family: montserrat, 'sans-serif';
         font-weight: 700;
-        font-size: 1rem;
+        font-size: .85rem;
     }
 
     .submit-button:hover{
@@ -85,15 +86,6 @@
 
     p {
         margin-bottom: 1rem;
-    }
-
-    @media only screen and (min-width: 450px) {
-        .input-email {
-            width: 65%;
-        }
-        .submit-button {
-            width: 25%;
-        }
     }
 
     @media only screen and (min-width: 768px) {

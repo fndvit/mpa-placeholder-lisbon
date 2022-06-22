@@ -5,19 +5,19 @@
         filter: drop-shadow(0 0 .5rem rgb(0 0 0 / 0.2));
       }
       .a {
-        fill: #ffffffdd;
+        fill: #ffffff;
       }
 
       .b {
-        fill: #9ddae4dd;
+        fill: #9ddae4ee;
       }
 
       .c {
-        fill: #619fcedd;
+        fill: #619fceee;
       }
 
       .d {
-        fill: #186bb5dd;
+        fill: #186bb5ee;
       }
     </style>
   </defs>
