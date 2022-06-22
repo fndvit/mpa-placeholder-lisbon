@@ -33,16 +33,14 @@
         padding-top: 30px;
         margin-bottom: .5rem;
         font-size: 1.125rem;
+        line-height: 1.8rem;
     }
 
     h3 {
         font-weight: 400;
         margin-bottom: .5rem;
-        font-size: 1.125rem;
-    }
-
-    h4 {
-        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .input-email {
@@ -110,12 +108,7 @@
     @media only screen and (min-width: 1280px) {
 
         h2 {
-            font-size: 1.125rem; 
             margin-top: 2rem;
-        }
-
-        h3 {
-            font-size: 1rem;
         }
     }
 </style>

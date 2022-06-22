@@ -1,5 +1,4 @@
 <script>
-    import landingImage from '../assets/img/landingImage.jpg';
     import unep from '../assets/logos/unep-white.svg';
     import mpath from '../assets/logos/mpath.svg';
     import fishing_xl from '../assets/img/fishing-xl.jpg';
@@ -85,7 +84,7 @@
     max-width:80%;
     margin: 0 auto;
     padding: 0;
-    padding-top: 10vh;
+    padding-top: 5vh;
   }
 
   h2 {
