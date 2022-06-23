@@ -73,7 +73,7 @@
     margin: 0;
     padding: 0;
     height: 80vh;
-    min-height: 24rem;
+    min-height: 30rem;
   }
 
   .unep-logo {
@@ -97,7 +97,7 @@
     margin-top: 1.5rem;
     font-size: 1.125rem;
     line-height: 1.8rem;
-    font-weight: 200;
+    font-weight: 400;
     color: #fff;
     width:75%;
     text-shadow: 0 0 .6rem rgb(0 0 0);
@@ -105,8 +105,8 @@
 
   .jump {
     position: absolute;
-    right: 3%;
-    bottom: 15%;
+    right: 5vw;
+    bottom: 20%;
     transition: opacity .2s;
   }
   
@@ -116,11 +116,12 @@
 
   .jump p {
     font-family: montserrat, 'sans-serif';
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 600;
     color:#fff;
     text-decoration: none;
     margin-left: .5rem;
+    padding-top: .15rem;
     position: absolute;
     transform-origin: 0 0;
     transform: rotate(-90deg);
@@ -166,6 +167,7 @@
 
   @media only screen and (min-width: 768px) {
 
+
     .landing-page {
         height: 80vh;
         min-height: 32rem;
@@ -190,12 +192,12 @@
     }
 
     .jump {
-        right: 5%;
+        right: 20vw;
         bottom: 20%;
     }
 
     .jump p {
-        font-size: 1rem;
+      padding-top: .3rem;
     }
 
     .arrow {
@@ -226,7 +228,7 @@
     h2 {
         font-size: 1.5rem;
         line-height: 2.25rem;
-        font-weight: 100;
+        font-weight: 200;
     }
   }
 

@@ -65,9 +65,10 @@
         border: solid 1px #FBE26B;
         background-color: #FBE26B;
         font-family: montserrat, 'sans-serif';
+        color: #FFF;
         font-weight: 700;
         font-size: .85rem;
-        border-radius: 3rem;
+        border-radius: 3rem!important;
     }
 
     .submit-button:hover{
