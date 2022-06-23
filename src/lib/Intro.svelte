@@ -56,9 +56,14 @@
   <div class="splash" >
     <div class="col-1">
         <img src={mpath} class="logo-mpath" alt="Logo for MPAth (Marine Protected Areas Toolkit Hub)" />
-        <h2>{header}<span class="jump"><a href="#subscribe">Subscribe below ↓</a></span></h2>
+        <h2>{header}</h2>
     </div>
   </div>
+  <a href="#subscribe">
+    <div class="jump">
+        <p>SUBSCRIBE</p>
+        <div class="arrow"></div>
+    </div></a>
 </div>
 
 <style>
@@ -98,18 +103,65 @@
     text-shadow: 0 0 .6rem rgb(0 0 0);
   }
 
-  .jump a {
-    font-size: 1rem;
+  .jump {
+    position: absolute;
+    right: 3%;
+    bottom: 15%;
+    transition: opacity .2s;
+  }
+  
+  .jump:hover {
+    opacity:.7;
+  }
+
+  .jump p {
+    font-family: montserrat, 'sans-serif';
+    font-size: 0.7rem;
     font-weight: 600;
     color:#fff;
     text-decoration: none;
     margin-left: .5rem;
-    border-bottom: dotted 1px #fff;
-    transition: opacity .2s;
+    position: absolute;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
   }
 
-  .jump a:hover {
-    opacity:.7;
+  .arrow {
+    width: 20px;
+    height: 70px;
+    margin: 0px 20px 20px;
+    display: inline-block;
+    position: relative;
+    transform: translatex(-47%);
+  }
+  .arrow::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #FFF;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(135deg); 
+    margin: 0 0 0 -6px;
+  }
+  .arrow::after{
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #FFF;
+    position: absolute;
+    transform-origin: 50% 50%;
+    width: 0;
+    height: 30px;
+    border-width: 0 2px 0 0;
+    transform: translate(-1px, -18px);
   }
 
   @media only screen and (min-width: 768px) {
@@ -135,6 +187,25 @@
     .col-1 {
       grid-column: 2;
       align-self: start;
+    }
+
+    .jump {
+        right: 5%;
+        bottom: 20%;
+    }
+
+    .jump p {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        height: 100px;
+        margin: 20px;
+    }
+
+    .arrow::after {
+        height: 60px;
+        transform: translate(-1px, -49px);
     }
 
   }
