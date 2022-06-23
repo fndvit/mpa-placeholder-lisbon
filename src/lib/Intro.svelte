@@ -132,7 +132,7 @@
     margin: 0px 20px 20px;
     display: inline-block;
     position: relative;
-    transform: translatex(-47%);
+    transform: translatex(-50%);
   }
   .arrow::before {
     content: '';
@@ -143,7 +143,7 @@
     left: 50%;
     border-style: solid;
     border-color: #FFF;
-    border-width: 2px 2px 0 0;
+    border-width: 1px 1px 0 0;
     position: absolute;
     transform-origin: 50% 50%;
     transform: rotate(135deg); 
@@ -160,7 +160,7 @@
     transform-origin: 50% 50%;
     width: 0;
     height: 30px;
-    border-width: 0 2px 0 0;
+    border-width: 0 1px 0 0;
     transform: translate(-1px, -18px);
   }
 
@@ -201,10 +201,14 @@
     .arrow {
         height: 100px;
         margin: 20px;
+        transform: translatex(-35%);
     }
-
+    .arrow::before {
+      border-width: 2px 2px 0 0;
+    }
     .arrow::after {
         height: 60px;
+        border-width: 0 2px 0 0;
         transform: translate(-1px, -49px);
     }
 
