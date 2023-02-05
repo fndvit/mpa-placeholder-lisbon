@@ -18,7 +18,7 @@
     </div>
     <div class="col-2">
       {#each content.text as p}
-      <p>{p}</p>
+      <p>{@html p}</p>
       {/each}
       <Subscribe 
         header={content.subscribeKicker}
